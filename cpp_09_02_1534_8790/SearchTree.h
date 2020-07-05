@@ -163,7 +163,7 @@ void SearchTree<T, Key>::remove(Node* current, const Key& key) {
 template<typename T, typename Key>
 void SearchTree<T, Key>::remove(const Key& key)
 {
-	remove(getKey(key), key);
+	remove(getNode(key), key);
 }
 
 template <typename T, typename Key>

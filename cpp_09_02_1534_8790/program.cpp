@@ -11,19 +11,19 @@ int main() {
 	SearchTree<Student*, int> tree([](Student* const &st) {return st->getId(); }, [](Student* &st) { delete st; });
 	SearchTree<Student*, string>* treeByName;
 	array<Student*,100> st;
-	int id , size;
+	int id , size = 0;
 	MenuOption choice;
+
 
 	tree.mode(INORDER);
 
 
-	//GET_LEAVES, GET_HEIGHT, REFLECT, LEFT_SONS, GET_LEVEL, REMOVE
 	while ((choice = menu()) != EXIT) {
 		switch (choice)
 		{
 		case ADD:
-			cout << "Insert student : ";
-			cin >> *(st[size]);
+			st[size] = new Student();
+			cin >> *st[size];
 			tree.add(st[size++]);
 			cout << "Tree after insertion: ";
 			tree.process();
@@ -66,6 +66,8 @@ int main() {
 			break;
 		}
 
+		for (int j = 0; j < size; ++j)
+			delete st[j];
 	}
 	return 0;
 }

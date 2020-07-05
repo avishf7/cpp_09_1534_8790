@@ -15,6 +15,7 @@ std::istream& operator>>(std::istream& in, Student& st)
 	cout << "\nid(1 - 999) - ";
 	in >> st._id;
 
+	
 	if (st._id < 1 || st._id > 999)
 		throw "ERROR: id out of range\n";
 
