@@ -139,7 +139,7 @@ void SearchTree<T, Key>::remove(Node* current, const Key& key) {
 	{
 		if (current->left())
 		{
-			current->right()->parent(current->parent());
+			current->left()->parent(current->parent());
 
 			if (current->parent()->right() == current)
 				current->parent()->right(current->left());

@@ -134,13 +134,13 @@ void SearchTree<T, Key>::remove(Node* current, const Key& key) {
 	{
 		Node* ascNode = ascended(current);
 		mySwap(current->value(), ascNode->value());
-		remove(ascNode,_getKey(ascNode->value()));
+		remove(ascNode, _getKey(ascNode->value()));
 	}
 	else
 	{
 		if (current->left())
 		{
-			current->right()->parent(current->parent());
+			current->left()->parent(current->parent());
 
 			if (current->parent()->right() == current)
 				current->parent()->right(current->left());
@@ -163,7 +163,7 @@ void SearchTree<T, Key>::remove(Node* current, const Key& key) {
 template<typename T, typename Key>
 void SearchTree<T, Key>::remove(const Key& key)
 {
-	remove(root, key);
+	remove(getKey(key), key);
 }
 
 template <typename T, typename Key>

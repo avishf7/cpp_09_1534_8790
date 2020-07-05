@@ -55,7 +55,7 @@ int main() {
 			for (int j = 0; j < size; ++j)
 				treeByName->add(st[j]);
 			cout << "inorder(by name):" << endl;
-			treeByName->process();
+			treeByName->process([](Student* & value) { std::cout << *value << " "; }); 
 			cout << endl;
 
 			delete treeByName;
