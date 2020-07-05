@@ -7,13 +7,14 @@
 template <typename T, typename Key>
 class SearchTree : public BinaryTree<T, Key> {
 	using typename BinaryTree<T, Key>::GetKey;
+	using typename BinaryTree<T, Key>::ValueProc;
 	using typename BinaryTree<T, Key>::Node;
 	using BinaryTree<T, Key>::root;
 	using BinaryTree<T, Key>::_getKey;
 	using BinaryTree<T, Key>::_delete;
 public:
 	SearchTree() {}
-	SearchTree(GetKey getKey) : BinaryTree<T, Key>(getKey) {}
+	SearchTree(GetKey getKey, ValueProc del) : BinaryTree<T,Key>(getKey,del) {}
 	SearchTree(const SearchTree&) = delete;
 	SearchTree(SearchTree&&) = delete;
 	SearchTree& operator=(const SearchTree&) = delete;
@@ -162,7 +163,7 @@ void SearchTree<T, Key>::remove(Node* current, const Key& key) {
 template<typename T, typename Key>
 void SearchTree<T, Key>::remove(const Key& key)
 {
-	remove(getNode(key), key);
+	remove(root, key);
 }
 
 template <typename T, typename Key>

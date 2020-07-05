@@ -52,10 +52,15 @@ int main() {
 		case REMOVE:
 			cout << "Enter a number ";
 			cin >> num;
-			tree.remove(num);
-			cout << "Tree after removing " << num << ": ";
-			tree.process();
-			cout << endl;
+			try 
+			{
+				tree.remove(num);
+				cout << "Tree after removing " << num << ": ";
+				tree.process();
+				cout << endl;
+			}
+			catch (const char* str) { cout << str << endl; }
+			
 			break;
 
 		default:
