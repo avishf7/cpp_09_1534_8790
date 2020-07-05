@@ -1,0 +1,253 @@
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 1
+Enter student details:
+
+id(1 - 999) - 17
+first name - dani
+last name - katz
+Tree after insertion:
+id: 17
+first name: dani
+last name: katz
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 1
+Enter student details:
+
+id(1 - 999) - 15
+first name - shlomi
+last name - riger
+Tree after insertion:
+id: 15
+first name: shlomi
+last name: riger
+ id: 17
+first name: dani
+last name: katz
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 1
+Enter student details:
+
+id(1 - 999) - 20
+first name - roni
+last name - iaulz
+Tree after insertion:
+id: 15
+first name: shlomi
+last name: riger
+ id: 17
+first name: dani
+last name: katz
+ id: 20
+first name: roni
+last name: iaulz
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 1
+Enter student details:
+
+id(1 - 999) - 52
+first name - hadar
+last name - ashuach
+Tree after insertion:
+id: 15
+first name: shlomi
+last name: riger
+ id: 17
+first name: dani
+last name: katz
+ id: 20
+first name: roni
+last name: iaulz
+ id: 52
+first name: hadar
+last name: ashuach
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 1
+Enter student details:
+
+id(1 - 999) - 8
+first name - dan
+last name - zilbershtein
+Tree after insertion:
+id: 8
+first name: dan
+last name: zilbershtein
+ id: 15
+first name: shlomi
+last name: riger
+ id: 17
+first name: dani
+last name: katz
+ id: 20
+first name: roni
+last name: iaulz
+ id: 52
+first name: hadar
+last name: ashuach
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 5
+inorder(by name):
+id: 8
+first name: dan
+last name: zilbershtein
+ id: 17
+first name: dani
+last name: katz
+ id: 52
+first name: hadar
+last name: ashuach
+ id: 20
+first name: roni
+last name: iaulz
+ id: 15
+first name: shlomi
+last name: riger
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 3
+Insert student id to search: 8
+id: 8
+first name: dan
+last name: zilbershtein
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 3
+Insert student id to search: 4
+not found
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 2
+Insert student id to remove: 8
+Tree after removing :
+id: 15
+first name: shlomi
+last name: riger
+ id: 17
+first name: dani
+last name: katz
+ id: 20
+first name: roni
+last name: iaulz
+ id: 52
+first name: hadar
+last name: ashuach
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 4
+inorder(by id):
+id: 15
+first name: shlomi
+last name: riger
+ id: 17
+first name: dani
+last name: katz
+ id: 20
+first name: roni
+last name: iaulz
+ id: 52
+first name: hadar
+last name: ashuach
+
+
+Menu options:
+
+   0    --      Exit
+   1    --      Insert Student to searchTree
+   2    --      Remove Student from searchTree by id
+   3    --      Search Student in the searchTree by id
+   4    --      Print out all Students by id order
+   5    --      Print out all Students by name order
+
+Please choose a menu option: 0

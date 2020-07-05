@@ -13,7 +13,7 @@ const char* MenuOptionLine[LAST_MENU_OPTION + 1] {
 	"Exit",
 	"Insert Student to searchTree",
 	"Remove Student from searchTree by id",
-	"Search Student in the tree bt id",
+	"Search Student in the searchTree by id",
 	"Print out all Students by id order",
 	"Print out all Students by name order",
 };

@@ -22,28 +22,33 @@ int main() {
 		switch (choice)
 		{
 		case ADD:
-			st[size] = new Student();
-			
-			cin >> *st[size];
-			tree.add(st[size++]);
-			cout << "Tree after insertion: " << endl;
-			tree.process([](Student*& value) { std::cout << *value << " "; });
-			cout << endl;
+				st[size] = new Student();
+
+				cin >> *st[size];
+				tree.add(st[size++]);
+				cout << "Tree after insertion: " << endl;
+				tree.process([](Student*& value) { std::cout << *value << " "; });
+				cout << endl;
+
 			break;
 		case REMOVE:
 			cout << "Insert student id to remove: ";
 			cin >> id;
-			tree.remove(id);
-			cout << "Tree after removing :" << endl;
-			tree.process([](Student*& value) { std::cout << *value << " "; });
-			cout << endl;
+			try 
+			{
+				tree.remove(id);
+				cout << "Tree after removing :";
+				tree.process();
+				cout << endl;
+			}
+			catch (const char* str) { cout << str << endl; }
 			break;
 		case SEARCH:
 			cout << "Insert student id to search: ";
 			cin >> id;
 
 			try { cout << *(tree.search(id)); }
-			catch (const char* str) { cout << str; };
+			catch (const char* str) { cout << str <<endl; };
 			break;
 		case PRINT_BY_ID:
 			cout << "inorder(by id):" << endl;

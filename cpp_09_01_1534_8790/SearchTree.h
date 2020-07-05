@@ -101,7 +101,7 @@ template <typename T, typename Key>
 typename SearchTree<T, Key>::Node* SearchTree<T, Key>::getNode(Node* current, const Key& key) const {
 	// see if argument value occurs in tree
 	if (current == nullptr)
-		throw "not found:"; // not found
+		throw "not found"; // not found
 	if (_getKey(current->value()) == key)
 		return current;
 	if (_getKey(current->value()) < key)
