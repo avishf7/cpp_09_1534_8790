@@ -1,0 +1,174 @@
+Enter 10 numbers
+17
+20
+52
+30
+12
+7
+10
+8
+15
+23
+Inorder: 7 8 10 12 15 17 20 23 30 52
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 1
+Number of leaves: 3
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 2
+Height of the tree: 4
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 3
+Show reflected tree: 52 30 23 20 17 15 12 10 8 7
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 4
+Number of left sons only: 3
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 5
+Enter a number 10
+Level of 10 on tree: 3
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 6
+Enter a number 10
+Tree after removing 10: 7 8 12 15 17 20 23 30 52
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 6
+Enter a number 23
+Tree after removing 23: 7 8 12 15 17 20 30 52
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 2
+Height of the tree: 3
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 6
+Enter a number 15
+Tree after removing 15: 7 8 12 17 20 30 52
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 1
+Number of leaves: 2
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 4
+Number of left sons only: 2
+
+Menu options:
+
+   0    --      Exit
+   1    --      Show the number of leaves
+   2    --      Show the height
+   3    --      Reflect the tree
+   4    --      Show the number of nodes with left sones only
+   5    --      Show the level of a node
+   6    --      Remove a node
+
+Please choose a menu option: 0
+
+C:\Users\e3112\source\repos\cpp_09_1534_8790\cpp_09_01_1534_8790\Debug\cpp_09_01_1534_8790.exe (process 24252) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window

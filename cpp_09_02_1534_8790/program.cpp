@@ -23,18 +23,19 @@ int main() {
 		{
 		case ADD:
 			st[size] = new Student();
+			
 			cin >> *st[size];
 			tree.add(st[size++]);
-			cout << "Tree after insertion: ";
-			tree.process();
+			cout << "Tree after insertion: " << endl;
+			tree.process([](Student*& value) { std::cout << *value << " "; });
 			cout << endl;
 			break;
 		case REMOVE:
 			cout << "Insert student id to remove: ";
 			cin >> id;
 			tree.remove(id);
-			cout << "Tree after removing :";
-			tree.process();
+			cout << "Tree after removing :" << endl;
+			tree.process([](Student*& value) { std::cout << *value << " "; });
 			cout << endl;
 			break;
 		case SEARCH:
@@ -46,11 +47,11 @@ int main() {
 			break;
 		case PRINT_BY_ID:
 			cout << "inorder(by id):" << endl;
-			tree.process();
+			tree.process([](Student*& value) { std::cout << *value << " "; });
 			cout << endl;
 			break;
 		case PRINT_BY_NAME:
-			treeByName = new SearchTree<Student*,string>([](Student* const& st) {return st->getFullName(); }, [](Student*& st) { delete st; });
+			treeByName = new SearchTree<Student*,string>([](Student* const& st) {return st->getFullName(); }, [](Student*& st) {});
 			
 			for (int j = 0; j < size; ++j)
 				treeByName->add(st[j]);
@@ -65,9 +66,6 @@ int main() {
 			cout << "ERROR!" << endl;
 			break;
 		}
-
-		for (int j = 0; j < size; ++j)
-			delete st[j];
 	}
 	return 0;
 }
