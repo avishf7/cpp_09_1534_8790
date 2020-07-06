@@ -145,21 +145,11 @@ Menu options:
 
 Please choose a menu option: 5
 inorder(by name):
-id: 8
-first name: dan
-last name: zilbershtein
- id: 17
-first name: dani
-last name: katz
- id: 52
-first name: hadar
-last name: ashuach
- id: 20
-first name: roni
-last name: iaulz
- id: 15
-first name: shlomi
-last name: riger
+dan zilbershtein
+dani katz
+hadar ashuach
+roni iaulz
+shlomi riger
 
 
 Menu options:

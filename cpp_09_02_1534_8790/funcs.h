@@ -1,5 +1,14 @@
+/*
+File: funcs.h
+Description:
+Course: 150018 C++ Workshop, Exercise 9, Question 2
+Author: Dan Zilberstein
+Students: eli ialoz 311201354
+		& avishay farkash 205918790
+*/
 #pragma once
 
+//swap by refrence any two values
 template <typename T>
 void mySwap(T& L, T& R)
 {
@@ -19,7 +28,7 @@ void mySwap(T& L, T& R)
 	}
 }
 
-//return the big value between two integer numbers
+//return the big value between any two numbers
 template <typename T>
 int max(T num1, T num2)
 {

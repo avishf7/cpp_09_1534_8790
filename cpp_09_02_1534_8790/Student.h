@@ -3,7 +3,7 @@ File: Student.h
 Description:
 Course: 150018 C++ Workshop, Exercise 9, Question 2
 Author: Dan Zilberstein
-Students: eli iluz 311201354
+Students: eli ialoz 311201354
 		& avishay farkash 205918790
 */
 #ifndef STUDENT_H

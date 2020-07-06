@@ -1,3 +1,11 @@
+/*
+File: SearcTree.h
+Description:
+Course: 150018 C++ Workshop, Exercise 9, Question 2
+Author: Dan Zilberstein
+Students: eli ialoz 311201354
+		& avishay farkash 205918790
+*/
 #ifndef __SEARCH_TREE_H_
 #define __SEARCH_TREE_H_
 
