@@ -27,7 +27,7 @@ int main() {
 				cin >> *st[size];
 				tree.add(st[size++]);
 				cout << "Tree after insertion: " << endl;
-				tree.process([](Student*& value) { std::cout << *value << " "; });
+				tree.process([](Student*& value) { cout << *value << " "; });
 				cout << endl;
 
 			break;
@@ -38,7 +38,7 @@ int main() {
 			{
 				tree.remove(id);
 				cout << "Tree after removing :";
-				tree.process();
+				tree.process([](Student*& value) { cout << *value << " "; });
 				cout << endl;
 			}
 			catch (const char* str) { cout << str << endl; }
@@ -52,7 +52,7 @@ int main() {
 			break;
 		case PRINT_BY_ID:
 			cout << "inorder(by id):" << endl;
-			tree.process([](Student*& value) { std::cout << *value << " "; });
+			tree.process([](Student*& value) { cout << *value << " "; });
 			cout << endl;
 			break;
 		case PRINT_BY_NAME:
@@ -61,7 +61,7 @@ int main() {
 			for (int j = 0; j < size; ++j)
 				treeByName->add(st[j]);
 			cout << "inorder(by name):" << endl;
-			treeByName->process([](Student* & value) { std::cout << *value << " "; }); 
+			treeByName->process([](Student*& value) { cout << value->getFullName() << endl; });
 			cout << endl;
 
 			delete treeByName;
